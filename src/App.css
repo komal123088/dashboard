@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+:root {
+  --background: radial-gradient(circle, #161679, #061334);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: radial-gradient(circle, #1212a1, #000080);
+  color: #f5efef;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+body.light-theme {
+  background: radial-gradient(circle, #f9f9fc, #000080);
+}
+
+::-webkit-scrollbar {
+  background: #000080;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #080bd4;
+  border-radius: 50px;
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.section {
+  padding: 20px 30px;
+}
+svg,
+button {
+  cursor: pointer;
+}
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: -5px;
+}
+.theme-btn2 {
+  /* margin-left: 20px; */
+  margin-top: 30px;
+  padding: 8px 14px;
+  border: 1px solid;
+}

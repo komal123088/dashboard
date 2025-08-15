@@ -1,0 +1,540 @@
+.billing {
+  margin-top: 63px;
+  position: relative;
+}
+
+.stats-container2 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-wrapper {
+  width: 390px;
+  height: 240px;
+  position: relative;
+}
+
+.card-background {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/Background.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-overlay {
+  width: 100%;
+  height: 100%;
+}
+
+.card-texture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  top: 22px;
+  left: 31px;
+  width: 405px;
+  height: 181px;
+  color: white;
+}
+
+.brand-section {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.number-section {
+  position: absolute;
+  top: 100px;
+  font-weight: bold;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+.valid-section,
+.cvv-section {
+  position: absolute;
+  top: 146px;
+  display: flex;
+  flex-direction: column;
+}
+
+.valid-section {
+  left: 0;
+}
+
+.cvv-section {
+  left: 93px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.value {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.billing-container {
+  width: 350px;
+  height: 425px;
+  position: relative;
+  color: white;
+  padding: 10px;
+  background: var(--background);
+  border-radius: 15px;
+}
+
+.billing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.billing-header h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.view-all-btn {
+  background-color: #0075ff;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.billing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.billing-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.billing-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.billing-date {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.billing-id {
+  font-weight: normal;
+  font-size: 12px;
+  color: #a0aec0;
+}
+
+.billing-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.billing-amount {
+  font-weight: 500;
+  font-size: 12px;
+  color: #a0aec0;
+}
+
+.billing-icon {
+  font-size: 14px;
+}
+
+.billing-pdf {
+  font-weight: 500;
+  font-size: 12px;
+  color: #a0aec0;
+}
+
+.mini-card {
+  width: 390px;
+  height: 240px;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: var(--background);
+  color: #eaf1ff;
+  position: relative;
+}
+
+.mini-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(#030324, #1313a8);
+}
+
+.mini-label {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  color: #b8c7e8;
+  opacity: 0.9;
+}
+
+.mini-amount {
+  margin: 4px 0 0 0;
+  font-weight: 800;
+  font-size: 28px;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.mini-top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mini-dots {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.mini-spark {
+  opacity: 0.85;
+}
+
+.mini-bottom {
+  padding-top: 8px;
+}
+
+.mini-newest {
+  margin: 0 0 6px 0;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: #8fa6d9;
+}
+
+.mini-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mini-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mini-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#24d07a, #19a55f);
+}
+
+.mini-texts {
+  line-height: 1.05;
+}
+
+.mini-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #eaf1ff;
+}
+
+.mini-time {
+  margin: 3px 0 0 0;
+  font-size: 11px;
+  color: #99acd6;
+}
+
+.mini-amount-right {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #cfe0ff;
+  opacity: 0.9;
+}
+.payment-section {
+  position: relative;
+  width: 810px;
+  height: 172px;
+  left: 2.5%;
+  border-radius: 15px;
+  background: var(--background);
+  top: -185px;
+}
+
+.payment-header {
+  position: absolute;
+  top: 22px;
+  left: 24px;
+}
+
+.payment-header h2 {
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+.add-card-btn {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  padding: 8px 12px;
+  background: #0075ff;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.add-card-btn:hover {
+  background: #0066e6;
+}
+
+.payment-card {
+  display: flex;
+  align-items: center;
+  width: 356px;
+  height: 69px;
+  padding: 0 20px;
+  position: absolute;
+  top: 79px;
+  border-radius: 15px;
+  backdrop-filter: blur(21px) brightness(100%);
+  background: var(--background);
+}
+
+.left-card {
+  left: 22px;
+}
+.right-card {
+  left: 430px;
+}
+
+.card-icon {
+  width: 21px;
+  height: 13px;
+}
+
+.vector-icon {
+  width: 24.5px;
+  height: 8.52px;
+  background-size: cover;
+}
+
+.card-details {
+  flex: 1;
+  padding-left: 15px;
+}
+
+.card-number {
+  font-size: 14px;
+  color: white;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+}
+.edit-btn svg {
+  color: #fff;
+}
+
+.billing-transactions-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: -150px;
+  padding: 0 30px;
+}
+
+.billing-info-box {
+  background: var(--background);
+  padding: 20px;
+  border-radius: 15px;
+  width: 580px;
+}
+
+.billing-card {
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background: var(--background);
+  margin-top: 10px;
+}
+
+.billing-card h4 {
+  margin: 0;
+}
+
+.billing-card p {
+  font-size: 13px;
+  opacity: 0.7;
+  margin: 2px 0;
+}
+
+.billing-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.billing-actions .delete {
+  color: red;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.billing-actions .edit {
+  color: white;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.transactions-card {
+  background: var(--background);
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.transactions-header h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.date-range {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.transaction-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.transaction-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: green;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+
+.transaction-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-name {
+  color: #fff;
+  font-weight: 500;
+}
+
+.transaction-date {
+  color: #888;
+  font-size: 13px;
+}
+
+.transaction-amount {
+  font-weight: 500;
+}
+
+.transaction-amount.positive {
+  color: #4caf50;
+}
+
+.transaction-amount.negative {
+  color: #f44336;
+}
+
+.transaction-amount.pending {
+  color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .payment-section {
+    width: 339px;
+    top: 10px;
+    height: 290px;
+  }
+  .payment-card {
+    width: 290px;
+  }
+  .right-card {
+    left: 25px;
+    top: 60%;
+  }
+  .billing-transactions-container {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+  .billing-card {
+    font-size: 12px;
+  }
+  .billing-actions {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}

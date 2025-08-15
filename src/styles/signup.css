@@ -1,0 +1,116 @@
+.login-left {
+  background-color: #000;
+}
+
+.register-container {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.register-card {
+  background: #0f143c;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  border: 1px solid #8a7c7c;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 10px 0 20px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  background: #1a1f3f;
+  border: 1px solid #fff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.social-btn:hover {
+  background: #22284f;
+}
+
+.divider {
+  color: gray;
+  margin: 15px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  background: transparent;
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+input::placeholder {
+  color: gray;
+}
+.remember-me2 input {
+  border: 1px solid red;
+}
+.remember-me2 {
+  align-items: center;
+  font-size: 13px;
+  color: gray;
+  margin-left: -125px;
+}
+
+.signup-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-btn:hover {
+  background: #1d4ed8;
+}
+
+.signin-link {
+  font-size: 13px;
+  color: gray;
+  margin-top: 15px;
+}
+
+.signin-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}

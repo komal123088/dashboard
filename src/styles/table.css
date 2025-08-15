@@ -1,0 +1,160 @@
+.container {
+  margin-top: 62px;
+}
+.background {
+  padding: 10px;
+  background: var(--background);
+  border-radius: 15px;
+}
+.header {
+  font-size: 8px;
+  padding: 5px;
+}
+.contentWrapper {
+  padding: 10px;
+}
+.tableHeaders {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #56577a;
+}
+.authorBlock {
+  display: flex;
+  font-size: 12px;
+
+  width: 78px;
+}
+.authorImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.functionBlock {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+}
+
+.departmentText {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.statusOffline,
+.statusOnline {
+  width: 40px;
+  margin-left: -20px;
+  margin-right: 30px;
+  margin-top: 8px;
+}
+.statusTextOffline {
+  border: 1px solid #fff;
+  padding: 3px;
+}
+.statusTextOnline {
+  padding: 3px 7px;
+  background: #01b574;
+}
+
+.employedText {
+  margin-right: 4px;
+}
+
+.editButton {
+  background: transparent;
+  border: none;
+  color: #fff;
+  height: 20px;
+  margin-top: 5px;
+}
+.done {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.done div:nth-child(2) {
+  color: #aaa;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+}
+.project-author,
+.project-function,
+.project-status,
+.project-employed,
+.project-employed1 {
+  position: absolute;
+}
+.project-function {
+  left: 46%;
+}
+.project-status {
+  left: 62%;
+}
+.project-employed {
+  right: 14%;
+}
+.project-employed1 {
+  right: 10%;
+}
+.project-table2 {
+  width: 100%;
+  margin-top: 30px;
+  background: var(--background);
+}
+@media (max-width: 768px) {
+  .contentWrapper {
+    padding: 0;
+  }
+  .tableHeaders {
+    gap: 175px;
+  }
+  .row {
+    gap: 160px;
+  }
+  .header-employed,
+  .header-status,
+  .statusOnline,
+  .statusOffline,
+  .employedText,
+  .editButton,
+  .budget-section,
+  .project-status {
+    display: none;
+  }
+  .roleText {
+    font-size: 12px;
+  }
+  .projectHeader {
+    height: 20px;
+    margin: 0 10px;
+    font-size: 10px;
+  }
+  .project-function {
+    left: 35%;
+  }
+
+  .project-employed {
+    right: 5%;
+  }
+  .project-employed1 {
+    right: 0;
+  }
+  .footer,
+  .media {
+    font-size: 10px;
+    gap: 10px;
+  }
+}
