@@ -1,16 +1,16 @@
 {
+  "homepage": "https://komal123088.github.io/dashboard",
   "name": "dashboard",
-  "home-page": "https://komal123088.github.io/dashboard",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

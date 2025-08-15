@@ -1,6 +1,6 @@
 import "./App.css";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   useLocation,
@@ -17,7 +17,6 @@ import SignUp from "./compnents/sign-up";
 const LayoutWrapper = ({ children }) => {
   const location = useLocation();
   const noLayoutRoutes = ["/signin", "/signup"];
-
   const showLayout = !noLayoutRoutes.includes(location.pathname);
 
   return (
