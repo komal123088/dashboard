@@ -1,6 +1,6 @@
 import "../styles/sidebar.css";
-import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 import {
   FaHome,
@@ -22,20 +22,37 @@ import { FiTool } from "react-icons/fi";
 
 const Layout = () => {
   const [lightMode, setLightMode] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const sidebarRef = useRef();
+  const location = useLocation();
 
   const toggleTheme = () => {
     setLightMode(!lightMode);
     document.body.classList.toggle("light-theme");
   };
 
-  const [open, setOpen] = useState(false);
+  const toggle = () => setOpen(!open);
 
-  const toggle = () => {
-    setOpen(!open);
-  };
+  // 🔹 Hide sidebar on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
+
+  // 🔹 Hide sidebar on click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <div className="layout">
+      {/* Top Bar */}
       <div className="top">
         <div className="top-left">
           <span className="text-gray">
@@ -67,14 +84,15 @@ const Layout = () => {
           <button className="btn">
             <FaBell />
           </button>
+
           <button className="theme-btn" onClick={toggleTheme}>
             {lightMode ? <FaSun size={18} /> : <FaMoon size={18} />}
-            <span>{lightMode ? " " : ""}</span>
           </button>
         </div>
       </div>
 
-      <div className={`side ${open ? "show" : "hide"}`}>
+      {/* Sidebar */}
+      <div ref={sidebarRef} className={`side ${open ? "show" : "hide"}`}>
         <h4 className="side-title">VISION UI FREE</h4>
 
         <ul className="menu">
@@ -118,9 +136,10 @@ const Layout = () => {
               <FaUserPlus /> <span>Sign Up</span>
             </NavLink>
           </li>
+
           <button className="theme-btn theme-btn2" onClick={toggleTheme}>
             {lightMode ? <FaSun size={18} /> : <FaMoon size={18} />}
-            <span>{lightMode ? "Dark mode" : "light mode"}</span>
+            <span>{lightMode ? "Dark mode" : "Light mode"}</span>
           </button>
         </ul>
 

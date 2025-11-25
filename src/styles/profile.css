@@ -43,7 +43,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 .welcome-box4 {
   display: flex;
@@ -54,7 +54,7 @@
   background-position: center;
   background-size: cover;
   border-radius: 15px;
-  width: 350px;
+  width: 325px;
 }
 .purple-btn4 {
   background: transparent;
@@ -181,7 +181,6 @@
 .bottom-grid4 {
   display: flex;
   margin-top: 20px;
-  flex-wrap: wrap;
 }
 
 .platform-settings4 {
@@ -212,11 +211,10 @@
 .projects-grid4 {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 35px;
 }
 .project-card4 {
-  width: 250px;
+  width: 245px;
 }
 .project-card4 img {
   width: 100%;
@@ -251,8 +249,12 @@
 @media (max-width: 768px) {
   .welcome-box4 {
     height: 200px;
+    width: 100%;
+    text-align: center;
   }
-
+  .purple-btn4 {
+    margin: 0 auto;
+  }
   .car-info4 {
     width: 100%;
     margin-top: 20px;
@@ -278,6 +280,15 @@
     width: 100%;
     margin-top: 20px;
     height: 400px;
+  }
+
+  .bottom-grid4,
+  .projects-grid4 {
+    flex-wrap: wrap;
+  }
+  .platform-settings4 {
+    margin: 0 auto;
+    width: 100%;
   }
   .projects-section4 h4 {
     margin-left: 20px;
