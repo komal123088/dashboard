@@ -293,10 +293,10 @@
   position: relative;
   width: 810px;
   height: 172px;
-  left: 2.5%;
+  left: 0;
   border-radius: 15px;
   background: var(--background);
-  top: -185px;
+  top: -166px;
 }
 
 .payment-header {
@@ -383,14 +383,13 @@
   gap: 20px;
   flex-wrap: wrap;
   margin-top: -150px;
-  padding: 0 30px;
 }
 
 .billing-info-box {
   background: var(--background);
   padding: 20px;
   border-radius: 15px;
-  width: 580px;
+  width: 570px;
 }
 
 .billing-card {
@@ -440,7 +439,7 @@
   background: var(--background);
   padding: 20px;
   border-radius: 12px;
-  width: 600px;
+  width: 585px;
 }
 
 .transactions-header {

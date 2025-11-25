@@ -31,6 +31,8 @@ body.light-theme {
 }
 .section {
   padding: 20px 30px;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 svg,
 button {

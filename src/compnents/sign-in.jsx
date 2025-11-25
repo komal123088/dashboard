@@ -76,7 +76,7 @@ const SignIn = () => {
           </div>
 
           <footer>
-            <p>© 2025, Made by Creative Babar Team</p>
+            <p> © 2025 create by Komal with creative Babar team</p>
             <div className="footer-links">
               <a href="/">Marketplace</a>
               <a href="/">Blog</a>

@@ -95,8 +95,8 @@ const Billing = () => {
   return (
     <>
       {" "}
-      <div className="billing ">
-        <div className="stats-container2 section">
+      <div className="billing section ">
+        <div className="stats-container2 ">
           <div className="card-wrapper">
             <div className="card-background">
               <div className="card-overlay"></div>
@@ -304,7 +304,7 @@ const Billing = () => {
           </div>
         </div>
         <div style={{ padding: "0 30px" }} className="footer">
-          <h6> 2025 Made by Creative Babar Team </h6>
+          <h6> © 2025 create by Komal with creative Babar team </h6>
           <div className="media">
             <h6>Marketplace</h6>
             <h6>Blogs</h6>
