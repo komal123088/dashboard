@@ -102,7 +102,7 @@ const SignUp = () => {
           </div>
 
           <footer>
-            <p> © 2025 create by Komal with creative Babar team</p>
+            <p> © 2025 created by Komal Raza</p>
             <div className="footer-links">
               <a href="/">Marketplace</a>
               <a href="/">Blog</a>
