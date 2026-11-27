@@ -165,7 +165,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="footer">
-          <h6> © 2025 create by Komal with creative Babar team</h6>
+          <h6> © 2025 created by Komal Raza</h6>
           <div className="media">
             <h6>Marketplace</h6>
             <h6>Blogs</h6>
